@@ -9,14 +9,14 @@
          <!-- сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
          <!-- то, что может увидеть пользователь, не прибегая к прокрутке-->
          <!-- content = адаптивный дизайн, initial-scale= маштаб - 1:1-->
-        <title>Моя первая веб страница</title>
+        <title>Контакты - Моя первая веб страница</title>
         <style> /*определение стилей элементов веб-страницы*/
             .menu {
              /* color: red; Цвет символа */
              font-size: 100%; /* Размер шрифта */            
             } 
             p {
-             color: rgb(49, 151, 116); /* Цвет текста */
+             color: rgb(39, 38, 122); /* Цвет текста */
             }
            /* .footer-text {
                 color:black;
@@ -27,39 +27,38 @@
         <header class="headler">
             <div class="container">
                 <h1 align="center"> 
-                    <a href="#" title="Main page"> 
-                        <img src="./images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
+                    <a href="../index.html" title="Main page"> 
+                        <img src="../images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
                     </a>
-                    Моя первая веб страница 
+                    Контакты 
                     <hr>
                 </h1>
             </div>
         </header>
         <nav class="menu">
-            <a href="#">Главная</a> | 
-            <a href="./pages/about.html">О нас</a> |
-            <a href="./pages/contacts.html">Контакты</a> 
-        </nav>
-       <article>
-            <h2 align="center">Добро пожаловать!</h2>
-       </article>           
+            <a href="../index.html">Главная</a> | 
+            <a href="./about.html">О нас</a> |
+            <a href="#">Контакты</a> 
+        </nav>                 
        <main>
-            <h3 align="justify" >Про меня</h3>
-            <p>Меня зовут Юстинас. Я работаю <em><strong>инженером-программистом</strong></em>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
-            <p>Живу в Москве. Люблю есть и спасть. &#9786;</p>
-            <h3 align="justify">Чему я хочу научиться</h3>
-            <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
+            <h2 align="center" >Как нас найти?</h2>
+            <p> 103132, Москва, пл. Старая, д. 4:</p>     
+            <div class="map-responsive"> <!--расположение на карте Google maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.176159895458!2d37.62803721568019!3d55.75544199925624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a58dfce821f%3A0x63f0d9606384ab60!2z0KHRgtCw0YDQsNGPINC_0LsuLCA0LCDQnNC-0YHQutCy0LAsIDEwMzEzMg!5e0!3m2!1sru!2sru!4v1668019158498!5m2!1sru!2sru"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>      
        </main>
         <footer class="footer">
             <div class="footer-block">
-                <img src="./images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
+                <img src="../images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
                 <address>
                     &nbsp;103132, Москва,<br>
                     &nbsp;пл. Старая, д. 4<br>
                     &nbsp;&#9742;&nbsp;555-55-55<br>                    
                     &nbsp;&#128386;&nbsp;<a href="https://www.google.com/" title="Go to google website">wwww.google.com</a> 
-                </address>    
-                <p align="center">&copy;&nbsp;Skillfactory</p>   
+                </address>
+                <p align="center">&copy;&nbsp;Skillfactory</p>          
             </div>
         </footer>
     </body>
