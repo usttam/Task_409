@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+    <!-- Язык, на котором написаны нередактируемые элементы, или язык для написания редактируемых элементов.-->
+    <head dir="ltr"> 
+        <!-- Этот раздел предназначен для заголовка страницы и технической информации. ltr - текст слева на право-->
+        <meta charset="utf-8"> 
+        <!-- кодировка символов-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+         <!-- то, что может увидеть пользователь, не прибегая к прокрутке-->
+         <!-- content = адаптивный дизайн, initial-scale= маштаб - 1:1-->
+        <title>Моя первая веб страница</title>
+        <style> /*определение стилей элементов веб-страницы*/
+            .menu {
+             /* color: red; Цвет символа */
+             font-size: 100%; /* Размер шрифта */            
+            } 
+            p {
+             color: rgb(49, 151, 116); /* Цвет текста */
+            }
+           /* .footer-text {
+                color:black;
+            }           */
+           </style>
+    </head>
+    <body>
+        <header class="headler">
+            <div class="container">
+                <h1 align="center"> 
+                    <a href="#" title="Main page"> 
+                        <img src="./images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
+                    </a>
+                    Моя первая веб страница 
+                    <hr>
+                </h1>
+            </div>
+        </header>
+        <nav class="menu">
+            <a href="#">Главная</a> | 
+            <a href="#">О нас</a> |
+            <a href="#">Контакты</a> 
+        </nav>
+       <article>
+            <h2 align="center">Добро пожаловать!</h2>
+       </article>           
+       <main>
+            <h3 align="justify" >Про меня</h3>
+            <p>Меня зовут Юстинас. Я работаю <em><strong>инженером-программистом</strong></em>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
+            <p>Живу в Москве. Люблю есть и спасть. &#9786;</p>
+            <h3 align="justify">Чему я хочу научиться</h3>
+            <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
+       </main>
+        <footer class="footer">
+            <div class="footer-block">
+                <img src="./images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
+                <address>
+                    &nbsp;103132, Москва,<br>
+                    &nbsp;г. Москва, пл. Старая, д. 4<br>
+                    &nbsp;&#9742;&nbsp;555-55-55<br>                    
+                    &nbsp;&#128386;&nbsp;<a href="https://www.google.com/" title="Go to google website">wwww.google.com</a> 
+                </address>
+                <span></span>
+
+
+            </div>
+        </footer>
+    </body>
+
+</html>
