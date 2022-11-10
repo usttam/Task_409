@@ -18,21 +18,33 @@
             p {
              color: rgb(39, 38, 122); /* Цвет текста */
             }
-           /* .footer-text {
-                color:black;
-            }           */
+            h1,h2 {
+             text-align: center; /* Расположение заголовка */
+            }
+           .footer-paragraph {
+             text-align: center;
+            } 
+            img {   /* Выравнивание картинок по левому краю */
+             float: left;             
+            }  
+            .footer-img { /*Размер картинок*/
+             height: 90px;
+            } 
+            .heading-img { /*Размер картинок*/
+             height: 40px;            
+            }                  
            </style>
     </head>
     <body>
         <header class="headler">
             <div class="container">
-                <h1 align="center"> 
+                <h1> 
                     <a href="../index.html" title="Main page"> 
-                        <img src="../images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
+                        <img class="heading-img" src="../images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h">
                     </a>
-                    Контакты 
-                    <hr>
+                    Контакты                     
                 </h1>
+                <hr>
             </div>
         </header>
         <nav class="menu">
@@ -41,7 +53,7 @@
             <a href="#">Контакты</a> 
         </nav>                 
        <main>
-            <h2 align="center" >Как нас найти?</h2>
+            <h2>Как нас найти?</h2>
             <p> 103132, Москва, пл. Старая, д. 4:</p>     
             <div class="map-responsive"> <!--расположение на карте Google maps -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.176159895458!2d37.62803721568019!3d55.75544199925624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a58dfce821f%3A0x63f0d9606384ab60!2z0KHRgtCw0YDQsNGPINC_0LsuLCA0LCDQnNC-0YHQutCy0LAsIDEwMzEzMg!5e0!3m2!1sru!2sru!4v1668019158498!5m2!1sru!2sru"
@@ -51,14 +63,14 @@
        </main>
         <footer class="footer">
             <div class="footer-block">
-                <img src="../images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
+                <img class="footer-img" src="../images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v">                
                 <address>
                     &nbsp;103132, Москва,<br>
                     &nbsp;пл. Старая, д. 4<br>
                     &nbsp;&#9742;&nbsp;555-55-55<br>                    
                     &nbsp;&#128386;&nbsp;<a href="https://www.google.com/" title="Go to google website">wwww.google.com</a> 
                 </address>
-                <p align="center">&copy;&nbsp;Skillfactory</p>          
+                <p class="footer-paragraph">&copy;&nbsp;Skillfactory</p>          
             </div>
         </footer>
     </body>

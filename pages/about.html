@@ -18,21 +18,34 @@
             p {
              color: rgb(25, 24, 70); /* Цвет текста */
             }
-           /* .footer-text {
-                color:black;
-            }           */
+            h1,h2 {
+             text-align: center; /* Расположение заголовка */
+            }
+           .footer-paragraph {
+             text-align: center;
+            } 
+            img {   /* Выравнивание картинок по левому краю */
+             float: left;             
+            }  
+            .footer-img { /*Размер картинок*/
+             height: 90px;
+            } 
+            .heading-img { /*Размер картинок*/
+             height: 40px;            
+            }              
+           
            </style>
     </head>
     <body>
         <header class="headler">
             <div class="container">
-                <h1 align="center"> 
+                <h1> 
                     <a href="../index.html" title="Main page"> 
-                        <img src="../images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
+                        <img class="heading-img" src="../images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h">
                     </a>
-                    О нас! 
-                    <hr>
+                    О нас!                     
                 </h1>
+                <hr>
             </div>
         </header>
         <nav class="menu">
@@ -41,19 +54,19 @@
             <a href="./contacts.html">Контакты</a> 
         </nav>                 
        <main>
-            <h2 align="center" >Мы лучшие в своем деле!</h2>
+            <h2 >Мы лучшие в своем деле!</h2>
             <p> Умелый <em><strong>инженер-программист.</strong></em></p>            
        </main>
         <footer class="footer">
             <div class="footer-block">
-                <img src="../images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
+                <img class="footer-img" src="../images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v">                
                 <address>
                     &nbsp;103132, Москва,<br>
                     &nbsp;пл. Старая, д. 4<br>
                     &nbsp;&#9742;&nbsp;555-55-55<br>                    
                     &nbsp;&#128386;&nbsp;<a href="https://www.google.com/" title="Go to google website">wwww.google.com</a> 
                 </address>
-                <p align="center">&copy;&nbsp;Skillfactory</p>          
+                <p class="footer-paragraph">&copy;&nbsp;Skillfactory</p>          
             </div>
         </footer>
     </body>

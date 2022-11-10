@@ -16,23 +16,35 @@
              font-size: 100%; /* Размер шрифта */            
             } 
             p {
-             color: rgb(49, 151, 116); /* Цвет текста */
+            color: rgb(49, 151, 116); /* Цвет текста */
             }
-           /* .footer-text {
-                color:black;
-            }           */
+            h1,h2 {
+             text-align: center; /* Расположение заголовка */
+            }
+           .footer-paragraph {
+             text-align: center;
+            } 
+            img {   /* Выравнивание картинок по левому краю */
+             float: left;             
+            }  
+            .footer-img { /*Размер картинок*/
+             height: 90px;
+            } 
+            .heading-img { /*Размер картинок*/
+             height: 40px;            
+            }                           
            </style>
     </head>
     <body>
         <header class="headler">
             <div class="container">
-                <h1 align="center"> 
+                <h1> 
                     <a href="#" title="Main page"> 
-                        <img src="./images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h" align="left" height="40px">
+                        <img class="heading-img" src="./images/html5-badge-h-css3-semantics.png" alt="HTML 5 logo-h">
                     </a>
-                    Моя первая веб страница 
-                    <hr>
-                </h1>
+                    Моя первая веб страница                     
+                </h1>                
+                <hr>
             </div>
         </header>
         <nav class="menu">
@@ -41,25 +53,25 @@
             <a href="./pages/contacts.html">Контакты</a> 
         </nav>
        <article>
-            <h2 align="center">Добро пожаловать!</h2>
+            <h2>Добро пожаловать!</h2>
        </article>           
        <main>
-            <h3 align="justify" >Про меня</h3>
+            <h3>Про меня</h3>
             <p>Меня зовут Юстинас. Я работаю <em><strong>инженером-программистом</strong></em>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
             <p>Живу в Москве. Люблю есть и спасть. &#9786;</p>
-            <h3 align="justify">Чему я хочу научиться</h3>
+            <h3>Чему я хочу научиться</h3>
             <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
        </main>
         <footer class="footer">
             <div class="footer-block">
-                <img src="./images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v" align="left" height="90px">                
+                <img class="footer-img" src="./images/html5-badge-v-css3-semantics.png" alt="HTML 5 logo-v">                
                 <address>
                     &nbsp;103132, Москва,<br>
                     &nbsp;пл. Старая, д. 4<br>
                     &nbsp;&#9742;&nbsp;555-55-55<br>                    
                     &nbsp;&#128386;&nbsp;<a href="https://www.google.com/" title="Go to google website">wwww.google.com</a> 
                 </address>    
-                <p align="center">&copy;&nbsp;Skillfactory</p>   
+                <p class="footer-paragraph">&copy;&nbsp;Skillfactory</p>   
             </div>
         </footer>
     </body>
